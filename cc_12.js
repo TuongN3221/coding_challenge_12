@@ -25,3 +25,22 @@ metricCardsArray.forEach((card) => {
 
   card.style.backgroundColor = "#e0f7fa"; // Light blue background
 });
+
+// Task 3
+function addProduct(){
+  const productItem = document.createElement("li");
+  productItem.setAttribute("class", "product-item");
+  productItem.setAttribute("data-product-id", Date.now());
+
+  productItem.textContent = `Product ${document.querySelectorAll(".product-item").length +1}`
+
+  const inventoryList = document.getElementById("inventoryList")
+  inventoryList.appendChild(productItem);
+}
+
+function removeProduct(){
+  const inventoryList = document.getElementById("inventoryList");
+  inventoryList.removeChild(productItem);
+}
+const addProductButton = document.getElementById("addProductButton");
+addProductButton.addEventListener("click", addProduct);
