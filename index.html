@@ -5,27 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Challenge 12</title>
 </head>
+<style>
+    
+</style>
 <body>
         <!--Task 1-->
     <!--Dashboard-->
     <div id="dashboard"></div>
-    <script>
-        const dashboardContainer = document.getElementById('dashboard');
-        const dashboardContainerSelect = document.querySelector('dashboard');
-
-        const revenueCard = document.createElement(`div`)
-
-        revenueCard.setAttribute('class', 'metric-card')
-        revenueCard.setAttribute('id', 'revenueCard')
-
-        revenueCard.innerHTML = `
-        <h3>Revenue</h3>
+    <div class="metric-card"></div>
+    <!--Task 2-->
+    <div class="metric-card">
+        <h3>Profit</h3>
         <p>$0</p>
-        `;
-
-        dashboardContainer.appendChild(revenueCard);
-
-    </script>
-
+    </div>
+    <div class="metric-card">
+        <h3>Expenses</h3>
+        <p>$0</p>
+    </div>
+    <script src="cc_12.js"></script>
 </body>
 </html>
