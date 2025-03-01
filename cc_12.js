@@ -34,11 +34,13 @@ function addProduct(){
 
   productItem.textContent = `Product ${document.querySelectorAll(".product-item").length +1}`
 
+  productItem.addEventListener("click", () => removeProduct(productItem));
+
   const inventoryList = document.getElementById("inventoryList")
   inventoryList.appendChild(productItem);
 }
 
-function removeProduct(){
+function removeProduct(productItem){
   const inventoryList = document.getElementById("inventoryList");
   inventoryList.removeChild(productItem);
 }
