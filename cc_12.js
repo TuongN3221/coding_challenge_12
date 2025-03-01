@@ -44,3 +44,19 @@ function removeProduct(){
 }
 const addProductButton = document.getElementById("addProductButton");
 addProductButton.addEventListener("click", addProduct);
+
+// Task 4
+const customerSection = document.getElementById("customerSection");
+customerSection.addEventListener("click", () => {
+  console.log("Customer section clicked");
+});
+
+const customerCards = document.querySelectorAll(".customer-card");
+customerCards.forEach((card) => {
+  card.addEventListener("click", (event) => {
+    console.log("Customer card clicked");
+
+    
+    event.stopPropagation();
+  });
+});

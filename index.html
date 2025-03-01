@@ -6,7 +6,18 @@
     <title>JavaScript Challenge 12</title>
 </head>
 <style>
-    
+    .customer-card{
+        border: 2px solid black;
+    border-radius: 5px;
+    background-color:rgb(161, 223, 246);
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+    .customer-card:hover{
+        background-color: #40606a
+    }
 </style>
 <body>
         <!--Task 1-->
@@ -22,9 +33,16 @@
         <h3>Expenses</h3>
         <p>$0</p>
     </div>
+    <h2>Customer Section</h2>
+    <div id="customerSection">
+        <div class="customer-card">Customer 1</div>
+        <div class="customer-card">Customer 2</div>
+        <div class="customer-card">Customer 3</div>
+    </div>
     <H2>Inventory Management</H2>
     <button id="addProductButton">Add Product</button>
     <ul id="inventoryList"></ul>
+    
     <script src="cc_12.js"></script>
 </body>
 </html>
